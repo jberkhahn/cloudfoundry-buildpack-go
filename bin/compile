@@ -10,7 +10,7 @@ ver=${GOVERSION:-1.2}
 file=${GOFILE:-go$ver.$(uname|tr A-Z a-z)-amd64.tar.gz}
 gcf_file="cf-$(uname|tr A-Z a-z)-amd64.tgz"
 url=${GOURL:-http://go.googlecode.com/files/$file}
-gcf_url="http://go-cli.s3.amazonaws.com/$gcf_file"
+gcf_url="http://go-cli.s3.amazonaws.com/master/$gcf_file"
 buildpack=$(dirname $(dirname $0))
 venv=$cache/venv
 
