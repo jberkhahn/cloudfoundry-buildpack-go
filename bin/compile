@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # usage: bin/compile <build-dir> <cache-dir>
 echo "Entering buildpack..."
+echo $VCAP_APPLICATION
 set -eo pipefail
 
 mkdir -p "$1" "$2"
